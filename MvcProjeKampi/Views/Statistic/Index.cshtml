@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>İstatistik</h2>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="small-box bg-yellow">
+            <div class="inner" style="text-align: center">
+                <br />
+                <h3><sup style="font-size: 50px">@ViewBag.totalCategory</sup></h3>
+                <sup style="font-size: 20px">@ViewBag.totalCategoryQuery</sup>
+            </div>  <a href="#" class="small-box-footer"></a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="small-box bg-black">
+            <div class="inner" style="text-align: center">
+                <br />
+                <h3><sup style="font-size: 50px">@ViewBag.totalSoftwareCategory</sup></h3>
+                <sup style="font-size: 20px">@ViewBag.totalSoftwareCategoryQuery</sup>
+            </div>  <a href="#" class="small-box-footer"></a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="small-box bg-fuchsia">
+            <div class="inner" style="text-align: center">
+                <br />
+                <h3><sup style="font-size: 50px">@ViewBag.writerNameWithA</sup></h3>
+                <sup style="font-size: 20px">@ViewBag.writerNameWithAQuery</sup>
+            </div>  <a href="#" class="small-box-footer"></a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="small-box bg-gradient-green">
+            <div class="inner" style="text-align: center">
+                <br />
+                <h3><sup style="font-size: 50px">@ViewBag.mostHeadings</sup></h3>
+                <sup style="font-size: 20px">@ViewBag.mostHeadingsQuery</sup>
+            </div>  <a href="#" class="small-box-footer"></a>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="small-box bg-gradient-indigo">
+            <div class="inner" style="text-align: center">
+                <br />
+                <h3><sup style="font-size: 50px">@ViewBag.statusSub</sup></h3>
+                <sup style="font-size: 20px">@ViewBag.statusSubQuery</sup>
+            </div>  <a href="#" class="small-box-footer"></a>
+        </div>
+    </div>
+</div>
+<a href="/AdminCategory/Index" class="btn btn-info">Kategoriler</a>
+
