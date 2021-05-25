@@ -11,3 +11,9 @@ Kurumsal Mimari oluşturuldu. 20. derse kadar olan kısım güncellendi.
 
 ![Category](Screens/Category.JPG)
 ![Statistic](Screens/Statistic.JPG)
+
+55. Ders ödevi
+* Durum kısmı renklendirmesi (switch case ifadesi ile) gerçekleştirildi.
+* True-False durumuna göre button üzerindeki değişikler gerçekleştirildi.
+![StatusTrue](https://i.hizliresim.com/2h18u3i.JPG)
+![StatusFalse](https://i.hizliresim.com/c8rg1e3.JPG)
