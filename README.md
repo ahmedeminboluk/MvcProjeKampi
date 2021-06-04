@@ -20,3 +20,8 @@ Kurumsal Mimari oluşturuldu. 20. derse kadar olan kısım güncellendi.
 
 60.Ders Ödevi
 * Contact sayfasındaki SideBar Partial olarak tutuldu.
+
+64. Ders Ödevi
+* ContactSideBarPartial view içerisinde mesaj sayıları gösterildi.
+* Tasklaklara kaydet işlemi yapıldı.
+* Summernote ödevi henüz yapılmadı.
