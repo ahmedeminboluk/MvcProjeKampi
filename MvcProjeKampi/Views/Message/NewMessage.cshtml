@@ -49,7 +49,7 @@
                         @using (Html.BeginForm("NewMessage", "Message", FormMethod.Post))
                         {
                             <div class="card-body">
-                                @Html.Label("Alıcı")
+                                @Html.Label("Alıcı : ")
                                 @Html.TextBoxFor(c => c.ReceiverMail, new { @class = "form-control" })
                                 @Html.ValidationMessageFor(c => c.ReceiverMail, "", new { @class = "text-danger" })
 
@@ -58,7 +58,7 @@
                                 @Html.ValidationMessageFor(c => c.Subject, "", new { @class = "text-danger" })
 
                                 @Html.Label("İçerik : ")
-                                @Html.TextAreaFor(c => c.MessageContent, new { @class = "form-control" })
+                                @Html.TextAreaFor(c => c.MessageContent, new { @class = "form-control", id = "compose-textarea" })
                                 @Html.ValidationMessageFor(c => c.MessageContent, "", new { @class = "text-danger" })
                                 <!-- /.card-header -->
 
@@ -84,7 +84,7 @@
                             <div class="card-footer">
                                 <div class="float-right">
                                     <button type="submit" formmethod="post" name="button" value="draft" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Taslaklara Kaydet</button>
-                                    <button type="button" name="button" value="save" class="btn btn-primary"><i class="far fa-envelope"></i> Gönder</button>
+                                    <button type="submit" name="button" value="save" class="btn btn-primary"><i class="far fa-envelope"></i> Gönder</button>
                                 </div>
 
                                 <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> İptal Et</button>

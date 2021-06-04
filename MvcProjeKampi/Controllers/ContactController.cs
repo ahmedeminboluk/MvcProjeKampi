@@ -32,7 +32,8 @@ namespace MvcProjeKampi.Controllers
             var contactList = cm.GetList();
             ViewBag.contactCount = contactList.Count();
             var listResult = mm.GetListSendbox();
-            ViewBag.sendCount = listResult.Count();
+            var sendList = listResult.FindAll(x => x.isDraft == false);
+            ViewBag.sendCount = sendList.Count();
             var listResult2 = mm.GetListInbox();
             ViewBag.inboxCount = listResult2.Count();
 
